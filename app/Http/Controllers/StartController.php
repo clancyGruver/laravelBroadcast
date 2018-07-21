@@ -92,4 +92,8 @@ class StartController extends Controller
 
         return $result;
     }
+
+    public function sendMessage(Request $request){
+        event(new \App\Events\NewMessage($request->input('message')));
+    }
 }

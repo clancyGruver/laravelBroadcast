@@ -13,11 +13,16 @@
 
 Auth::routes();
 
-Route::get('/start', 'StartController@index');
-Route::get('/start/get-json', 'StartController@getJSON');
-Route::get('/start/data-chart', 'StartController@chartData');
-Route::get('/start/random-chart', 'StartController@chartRandom');
-Route::get('/start/socket-chart', 'StartController@newEvent');
+Route::get('/', 'HomeController@index');
+
+Route::prefix('start')->group(function(){
+	Route::get('', 'StartController@index');
+	Route::get('/get-json', 'StartController@getJSON');
+	Route::get('/data-chart', 'StartController@chartData');
+	Route::get('/random-chart', 'StartController@chartRandom');
+	Route::get('/socket-chart', 'StartController@newEvent');
+	Route::get('/send-message', 'StartController@sendMessage');
+});
 
 Route::get('/spa/{any}', 'SpaController@index')->where('any', '.*');
 

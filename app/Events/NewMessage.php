@@ -10,11 +10,11 @@ use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Broadcasting\InteractsWithSockets;
 use Illuminate\Contracts\Broadcasting\ShouldBroadcast;
 
-class NewEvent implements ShouldBroadcast
+class NewMessage implements ShouldBroadcast
 {
     use Dispatchable, InteractsWithSockets, SerializesModels;
 
-    public $result;
+    public $message;
     /**
      * Create a new event instance.
      *
@@ -22,8 +22,7 @@ class NewEvent implements ShouldBroadcast
      */
     public function __construct($data)
     {
-        $this->result = $data;
-        //
+        $this->message = $data;
     }
 
     /**
@@ -33,7 +32,6 @@ class NewEvent implements ShouldBroadcast
      */
     public function broadcastOn()
     {
-        return ['news-action'];
-        //return new PrivateChannel('channel-name');
+        return['news-action'];
     }
 }

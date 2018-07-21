@@ -17,6 +17,7 @@ Vue.component('chartline-component', require('./components/ChartlineComponent.vu
 Vue.component('chartpie-component', require('./components/ChartpieComponent.vue'));
 Vue.component('chartrandom-component', require('./components/ChartrandComponent.vue'));
 Vue.component('chartsocket-component', require('./components/SocketComponent.vue'));
+Vue.component('chat-socket-component', require('./components/SocketChatComponent.vue'));
 
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel';

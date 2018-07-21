@@ -10,7 +10,7 @@
 <div class="row">
     <div class="col-sm-4">
         <div class="btn-toolbar justify-content-center" role="toolbar" aria-label="Toolbar with button groups">
-            <div class="btn-group mr-2" role="group" aria-label="First group">
+            <div class="btn-group" role="group" aria-label="First group">
                 <a type="button" class="btn btn-secondary" href="#1">Example component</a>
                 <a type="button" class="btn btn-secondary" href="#2">Vue -> Blade</a>
                 <a type="button" class="btn btn-secondary" href="#3">Ajax</a>
@@ -18,6 +18,7 @@
                 <a type="button" class="btn btn-secondary" href="#5">Pie</a>
                 <a type="button" class="btn btn-secondary" href="#6">Random</a>
                 <a type="button" class="btn btn-secondary" href="#7">Socket</a>
+                <a type="button" class="btn btn-secondary" href="#8">Chat</a>
             </div>
         </div>
     </div>
@@ -98,6 +99,17 @@
                         <div class="card-body" style="min-height: 720px;">
                             <h2 class="text-center">#7 Broadcasting</h2>
                             <chartsocket-component></chartsocket-component>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row m-2" data-hash="8">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-body" style="min-height: 720px;">
+                            <h2 class="text-center">#8 Chat</h2>
+                            <chat-socket-component></chat-socket-component>
                         </div>
                     </div>
                 </div>

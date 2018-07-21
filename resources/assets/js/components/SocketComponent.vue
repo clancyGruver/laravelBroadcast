@@ -6,7 +6,7 @@
                 <input type="checkbox" v-model="realtime"/> realtime
                 <input type="text" v-model="label"/>
                 <input type="text" v-model="sale"/>
-                <button @click="sendData" class="btn btn-primary btn-xs text mt-1 mh-100"></button>
+                <button @click="sendData" class="btn btn-primary btn-xs text mt-1 mh-100">Обновить</button>
             </div>
         </div>
     </div>
