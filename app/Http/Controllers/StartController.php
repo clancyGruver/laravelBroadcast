@@ -6,6 +6,16 @@ use Illuminate\Http\Request;
 
 class StartController extends Controller
 {
+    /**
+     * Create a new controller instance.
+     *
+     * @return void
+    **/
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     public function index()
     {
         $url_data = [

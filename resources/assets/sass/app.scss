@@ -179,3 +179,17 @@ $rotatingCirclePosTop: $circleDiam/2 - $rotatingCircleDiam/2;
 @keyframes spin {
     100% { transform: rotate(360deg); }
 }
+
+#logo{
+  font-family: Raleway;
+  font-weight: bold;
+}
+
+.navbar-nav{
+  #phone{
+    margin-right: 10px;
+  }
+  #envelope{
+    margin-right: 5px;
+  }
+}

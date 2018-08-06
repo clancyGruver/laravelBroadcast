@@ -10544,3 +10544,16 @@ a.text-dark:focus {
   }
 }
 
+#logo {
+  font-family: Raleway;
+  font-weight: bold;
+}
+
+.navbar-nav #phone {
+  margin-right: 10px;
+}
+
+.navbar-nav #envelope {
+  margin-right: 5px;
+}
+
