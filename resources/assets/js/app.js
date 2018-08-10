@@ -7,6 +7,7 @@ import VueRouter from 'vue-router'
 Vue.use(VueRouter)
 
 import App from './views/App'
+import Landing from './views/Landing'
 import LeftMenu from './views/leftmenu'
 import CategoriesIndex from './views/CategoriesIndex'
 
@@ -44,8 +45,7 @@ $(document).ready(function(){
 
 const app = new Vue({
     el: '#app',
-    /*components: { 
-    	'App' : App,
+    components: { 
+    	'monitoring-stores' : Landing,
     },
-    router,*/
 });

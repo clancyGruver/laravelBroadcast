@@ -37446,14 +37446,16 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_router__ = __webpack_require__(225);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__views_App__ = __webpack_require__(226);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__views_App___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__views_App__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__views_leftmenu__ = __webpack_require__(229);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__views_leftmenu___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__views_leftmenu__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__views_CategoriesIndex__ = __webpack_require__(293);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__views_CategoriesIndex___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__views_CategoriesIndex__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_owl_carousel_dist_assets_owl_carousel_css__ = __webpack_require__(321);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_owl_carousel_dist_assets_owl_carousel_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_owl_carousel_dist_assets_owl_carousel_css__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_owl_carousel__ = __webpack_require__(327);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_owl_carousel___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_owl_carousel__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__views_Landing__ = __webpack_require__(330);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__views_Landing___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__views_Landing__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__views_leftmenu__ = __webpack_require__(229);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__views_leftmenu___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__views_leftmenu__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__views_CategoriesIndex__ = __webpack_require__(293);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__views_CategoriesIndex___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__views_CategoriesIndex__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_owl_carousel_dist_assets_owl_carousel_css__ = __webpack_require__(321);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_owl_carousel_dist_assets_owl_carousel_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_owl_carousel_dist_assets_owl_carousel_css__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_owl_carousel__ = __webpack_require__(327);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_owl_carousel___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_owl_carousel__);
 
 __webpack_require__(176);
 
@@ -37461,6 +37463,7 @@ __webpack_require__(176);
 
 
 __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vue_router__["a" /* default */]);
+
 
 
 
@@ -37483,7 +37486,7 @@ var router = new __WEBPACK_IMPORTED_MODULE_1_vue_router__["a" /* default */]({
     routes: [{
         path: '/beletag',
         name: 'beletag.index',
-        component: __WEBPACK_IMPORTED_MODULE_3__views_leftmenu___default.a
+        component: __WEBPACK_IMPORTED_MODULE_4__views_leftmenu___default.a
     }]
 });
 
@@ -37496,11 +37499,10 @@ $(document).ready(function () {
 });
 
 var app = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
-    el: '#app'
-    /*components: { 
-    	'App' : App,
-    },
-    router,*/
+    el: '#app',
+    components: {
+        'monitoring-stores': __WEBPACK_IMPORTED_MODULE_3__views_Landing___default.a
+    }
 });
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(9)))
 
@@ -98457,6 +98459,196 @@ module.exports = function (css) {
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 329 */,
+/* 330 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(4)
+/* script */
+var __vue_script__ = __webpack_require__(331)
+/* template */
+var __vue_template__ = __webpack_require__(332)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources\\assets\\js\\views\\Landing.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-71345c1a", Component.options)
+  } else {
+    hotAPI.reload("data-v-71345c1a", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 331 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_barchart_js__ = __webpack_require__(290);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    data: function data() {
+        return {
+            electronicGoods: {
+                labels: ['Эльдорадо', 'М-Видео', 'ДНС'],
+                datasets: [{
+                    label: ['Электротовары'],
+                    data: [7800, 6400, 6900],
+                    backgroundColor: ["Beige", "CadetBlue", "BlueViolet"],
+                    borderColor: [],
+                    borderWidth: 1
+                }]
+            },
+            alkoGoods: {
+                labels: ['Мавт', 'Красное и белое'],
+                datasets: [{
+                    label: ['Алкоголь'],
+                    data: [100, 140],
+                    backgroundColor: ["Beige", "CadetBlue"],
+                    borderColor: [],
+                    borderWidth: 1
+                }]
+            },
+            CSS_COLOR_NAMES: ["AliceBlue", "AntiqueWhite", "Aqua", "Aquamarine", "Azure", "Beige", "Bisque", "Black", "BlanchedAlmond", "Blue", "BlueViolet", "Brown", "BurlyWood", "CadetBlue", "Chartreuse", "Chocolate", "Coral", "CornflowerBlue", "Cornsilk", "Crimson", "Cyan", "DarkBlue", "DarkCyan", "DarkGoldenRod", "DarkGray", "DarkGrey", "DarkGreen", "DarkKhaki", "DarkMagenta", "DarkOliveGreen", "Darkorange", "DarkOrchid", "DarkRed", "DarkSalmon", "DarkSeaGreen", "DarkSlateBlue", "DarkSlateGray", "DarkSlateGrey", "DarkTurquoise", "DarkViolet", "DeepPink", "DeepSkyBlue", "DimGray", "DimGrey", "DodgerBlue", "FireBrick", "FloralWhite", "ForestGreen", "Fuchsia", "Gainsboro", "GhostWhite", "Gold", "GoldenRod", "Gray", "Grey", "Green", "GreenYellow", "HoneyDew", "HotPink", "IndianRed", "Indigo", "Ivory", "Khaki", "Lavender", "LavenderBlush", "LawnGreen", "LemonChiffon", "LightBlue", "LightCoral", "LightCyan", "LightGoldenRodYellow", "LightGray", "LightGrey", "LightGreen", "LightPink", "LightSalmon", "LightSeaGreen", "LightSkyBlue", "LightSlateGray", "LightSlateGrey", "LightSteelBlue", "LightYellow", "Lime", "LimeGreen", "Linen", "Magenta", "Maroon", "MediumAquaMarine", "MediumBlue", "MediumOrchid", "MediumPurple", "MediumSeaGreen", "MediumSlateBlue", "MediumSpringGreen", "MediumTurquoise", "MediumVioletRed", "MidnightBlue", "MintCream", "MistyRose", "Moccasin", "NavajoWhite", "Navy", "OldLace", "Olive", "OliveDrab", "Orange", "OrangeRed", "Orchid", "PaleGoldenRod", "PaleGreen", "PaleTurquoise", "PaleVioletRed", "PapayaWhip", "PeachPuff", "Peru", "Pink", "Plum", "PowderBlue", "Purple", "Red", "RosyBrown", "RoyalBlue", "SaddleBrown", "Salmon", "SandyBrown", "SeaGreen", "SeaShell", "Sienna", "Silver", "SkyBlue", "SlateBlue", "SlateGray", "SlateGrey", "Snow", "SpringGreen", "SteelBlue", "Tan", "Teal", "Thistle", "Tomato", "Turquoise", "Violet", "Wheat", "Yellow", "YellowGreen"],
+
+            chartOptionsAlko: {
+                scales: {
+                    yAxes: [{
+                        display: true,
+                        scaleLabel: {
+                            display: true
+                        },
+                        ticks: {
+                            min: 80,
+                            max: 160
+                        }
+                    }]
+                }
+            },
+            chartOptionsElectro: {
+                scales: {
+                    yAxes: [{
+                        display: true,
+                        scaleLabel: {
+                            display: true
+                        },
+                        ticks: {
+                            min: 6000,
+                            max: 8000
+                        }
+                    }]
+                }
+            }
+        };
+    },
+
+    components: {
+        'bar-chart': __WEBPACK_IMPORTED_MODULE_0__components_barchart_js__["a" /* default */]
+    },
+    methods: {}
+});
+
+/***/ }),
+/* 332 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "row" }, [
+    _vm._m(0),
+    _vm._v(" "),
+    _c(
+      "div",
+      { staticClass: "col-6" },
+      [
+        _c("bar-chart", {
+          attrs: {
+            "chart-data": _vm.electronicGoods,
+            options: _vm.chartOptionsElectro
+          }
+        })
+      ],
+      1
+    ),
+    _vm._v(" "),
+    _c(
+      "div",
+      { staticClass: "col-6" },
+      [
+        _c("bar-chart", {
+          attrs: { "chart-data": _vm.alkoGoods, options: _vm.chartOptionsAlko }
+        })
+      ],
+      1
+    )
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-12 text-center" }, [
+      _c("h2", [_vm._v("Отслеживаемые товары")])
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-71345c1a", module.exports)
+  }
+}
 
 /***/ })
 /******/ ]);
