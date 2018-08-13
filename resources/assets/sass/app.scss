@@ -147,7 +147,9 @@ $rotatingCircleDiam: $circleDiam/5;
 $innerCirclePos: ($circleDiam - $innerCircleDiam)/2;
 $rotatingCirclePosLeft: ($circleDiam - $innerCircleDiam)/2 - $rotatingCircleDiam;
 $rotatingCirclePosTop: $circleDiam/2 - $rotatingCircleDiam/2;
-
+body{
+  color: #777;
+}
 //The circle wrapper  
 .spinner {  
   text-indent: 999em;
@@ -183,6 +185,7 @@ $rotatingCirclePosTop: $circleDiam/2 - $rotatingCircleDiam/2;
 #logo{
   font-family: Raleway;
   font-weight: bold;
+  color: #6cbb23;
 }
 
 .navbar-nav{
@@ -191,5 +194,146 @@ $rotatingCirclePosTop: $circleDiam/2 - $rotatingCircleDiam/2;
   }
   #envelope{
     margin-right: 5px;
+  }
+}
+
+.story-content{ 
+  p {
+    line-height: 1.65em;
+    font-size: 14px;
+    font-weight: 300;
+  }
+}
+
+.section-heading {
+    margin-bottom: 60px;
+    
+    h2 {
+      font-weight: 300;
+      color: #5b32b4;
+      font-size: 48px;
+      margin: 0;
+  }
+
+  .line-shape {
+    margin-left: calc(50% - 40px);
+    width: 80px;
+    height: 2px;
+    background-color: #fb397d;
+    margin-top: 15px;
+  }
+}
+
+#goods_table{
+  .thead-dark{
+    th{
+      background-color: #6cbb23;
+    }
+  }
+}
+
+.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+
+    .single-price-plan {
+      background: #ffffff;
+      border: 1px solid #ebebeb;
+      border-radius: 30px 30px 30px 0;
+      margin-bottom: 30px;
+
+      .package-plan {
+          background-color: #6cbb23;
+          padding: 40px 0;
+          border-radius: 30px 30px 0 0;
+
+           h5 {
+              color: #fff;
+              font-size: 17px;
+              padding: 0px 5px;
+          }
+
+          .ca-price{
+            span {
+                font-size: 18px;
+                color: #fff;
+            }
+            h4 {    
+                color: #fff;
+                font-size: 48px;
+                position: relative;
+                z-index: 1;
+                margin-bottom: 0;
+                line-height: 1;
+            }
+          } 
+      }
+      .package-description{
+        p {
+          margin-bottom: 0;
+          line-height: 1;
+          padding: 15px 0;
+          border-bottom: 1px solid #ebebeb;
+          color: #726a84;
+          font-size: 16px;
+          font-weight: 300;
+          margin-top: 0;
+          
+          :first-child {
+            border-top: 1px solid #ebebeb;
+          }
+        }
+      }
+  }
+}
+
+#myForm{
+  .common-input {
+      border: 1px solid #a6d477;
+      line-height: 48px;
+      width: 100%;
+      display: block;
+      background: transparent;
+      padding: 0 25px;
+  }
+  .common-textarea {
+      border: 1px solid #a6d477;
+      width: 100%;
+      display: block;
+      background: transparent;
+      padding: 15px 25px;
+      height: 150px;
+      resize: none;
+  }
+  .primary-btn.white-bg {
+      background: #fff;
+      border: 1px solid #eee;
+      color: #6cbb23;
+  }
+  .white-bg {
+      background: #fff;
+
+      &:hover {
+          background: #6cbb23;
+          color: #fff;
+          border: 1px solid transparent;
+      }
+  }
+  .primary-btn {
+      line-height: 40px;
+      padding: 0 30px;
+      border-radius: 20px;
+      background: transparent;
+      border: 1px solid #fff;
+      color: #222;
+      display: inline-block;
+      font-weight: 500;
+      position: relative;
+      -webkit-transition: all 0.3s ease 0s;
+      -moz-transition: all 0.3s ease 0s;
+      -o-transition: all 0.3s ease 0s;
+      transition: all 0.3s ease 0s;
+      cursor: pointer;
+      text-transform: uppercase;
   }
 }

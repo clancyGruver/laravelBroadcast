@@ -25,6 +25,7 @@ Route::prefix('start')->group(function(){
 });
 
 Route::get('/spa/{any}', 'SpaController@index')->where('any', '.*');
+Route::post('/sendmesasage', 'SpaController@sendmessage')->name('sendmesasage');
 
 Route::middleware('auth')->prefix('admin')->group(function(){
 	Route::get('categories','CategoriesController@index')->name('categories.index');

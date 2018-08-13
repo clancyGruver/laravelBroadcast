@@ -1,8 +1,5 @@
 <template>
     <div class="row">
-        <div class="col-12 text-center">
-            <h2>Отслеживаемые товары</h2>
-        </div>
         <div class="col-6">
             <bar-chart :chart-data="electronicGoods" :options="chartOptionsElectro"></bar-chart>
         </div>
@@ -23,7 +20,7 @@ export default {
             datasets: [{
                 label: ['Электротовары'],
                 data: [7800, 6400, 6900],
-                backgroundColor: ["Beige","CadetBlue","BlueViolet"],
+                backgroundColor: ["#49c5b6","#ECD06F","BlueViolet"],
                 borderColor: [],
                 borderWidth: 1
             }]
@@ -33,7 +30,7 @@ export default {
             datasets: [{
                 label: ['Алкоголь'],
                 data: [100, 140],
-                backgroundColor:  ["Beige","CadetBlue"],
+                backgroundColor:  ["#49c5b6","#ECD06F",],
                 borderColor: [],
                 borderWidth: 1
             }]
